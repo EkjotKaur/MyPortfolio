@@ -1,0 +1,33 @@
+.Navbar {
+  width: 160px;
+  padding: 5px;
+  height: 100vh;
+  position: fixed;
+  z-index: 100;
+}
+.row {
+  margin: 0 !important;
+}
+.navlinks {
+  height: 30px;
+  padding: 20px 10px 30px;
+  margin: 5px 0;
+  display: flex;
+  transition: ease-in-out 0.2s;
+  border-radius: 1px;
+  align-items: center;
+  font-weight: 600;
+  /* border: 1px solid #1e847f; */
+  width: 59px;
+  /* padding: 10px; */
+
+}
+.hover-navlink-hide {
+  font-size: 2rem;
+}
+
+.hover-navlink {
+  display: none;
+  transition: none;
+  padding: 10px 0 0 10px;
+}

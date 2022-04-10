@@ -1,0 +1,118 @@
+.card-col {
+  .card {
+    background-color: #222;
+    color: #fff;
+    height: 100%;
+  }
+  padding-bottom: 20px;
+}
+
+.project-body {
+  text-align: justify;
+  padding-bottom: 10px;
+  font-size: 0.9rem;
+}
+.project-link {
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+
+.icon {
+  font-size: 0.9rem;
+  display: inline-flex;
+  background: #d8d8d8;
+  border-radius: 3px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  color: #222;
+  span {
+    border-radius: 5px;
+    padding: 3px 5px;
+  }
+}
+
+.react {
+  background: #bad5f5;
+  span::after {
+    content: "React.js";
+  }
+}
+
+.express {
+  background: #f2c986;
+  span::after {
+    content: "Express";
+  }
+}
+
+.node {
+  background: #e1c1c1;
+  span::after {
+    content: "Node.js";
+  }
+}
+
+.mongodb {
+  background: #eadd86;
+  span::after {
+    content: "MongoDB";
+  }
+}
+
+.socket {
+  background: #afeae5;
+  span::after {
+    content: "Socket.io";
+  }
+}
+
+.webrtc {
+  background: #b3afea;
+  span::after {
+    content: "webRTC";
+  }
+}
+.postman {
+  background: #afc4ea;
+  span::after {
+    content: "Postman";
+  }
+}
+.html {
+  background: #9de4da;
+  span::after {
+    content: "HTML";
+  }
+}
+.ejs {
+  background: #e49d9d;
+  span::after {
+    content: "EJS";
+  }
+}
+.javascript {
+  background: #9dd6e4;
+  span::after {
+    content: "JavaScript";
+  }
+}
+.css {
+  background: #ce9de4;
+  span::after {
+    content: "CSS";
+  }
+}
+.bootstrap {
+  background: #e3e49d;
+  span::after {
+    content: "Bootrap";
+  }
+}
+
+.github {
+  color: #739150;
+}
+
+.threedotsicon {
+  float: right;
+}

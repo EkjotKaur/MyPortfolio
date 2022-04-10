@@ -1,0 +1,20 @@
+.mypic {
+  width: 300px;
+  position: absolute;
+  right: calc(66.7% - 110px);
+  z-index: 10;
+  margin-top: 20px;
+}
+
+.myPicBackground {
+  width: 250px;
+  height: 320px;
+  /* background-color: #3a726f; */
+  position: absolute;
+  right: calc(66.7% + 20px);
+  top: calc(50% - 250px);
+}
+
+.leftabout {
+  padding-left: 100px !important;
+}

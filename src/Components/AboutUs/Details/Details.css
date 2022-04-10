@@ -1,0 +1,63 @@
+.myname {
+  font-size: 3rem;
+  color: #97fffc;
+  font-weight: 400;
+  /* letter-spacing: 5px; */
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.kaaaam {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #97fffc;
+  font-family: "Josefin Slab", serif;
+}
+
+.title-profile {
+  width: 230px !important;
+}
+
+.hrline {
+  width: calc(100% - 300px);
+}
+
+.bottomline::after,
+.hrline::after {
+  content: "";
+  display: inline-block;
+  height: 0.5em;
+  vertical-align: text-bottom;
+  width: 100%;
+  margin-right: -100%;
+  /* margin-left: 10px; */
+  border-top: 2px solid #2ebdb6;
+  text-align: end;
+}
+
+.bottomline::after {
+  border-top: 4px solid #2ebdb6;
+}
+.box {
+  width: 80px;
+  height: 80px;
+  /* background-color: #1177ff; */
+  background-color: #1e8580;
+  position: absolute;
+  z-index: 1;
+  /* margin-bottom: 100px; */
+  top: calc(50% - 230px);
+}
+
+.info {
+  font-size: 0.9rem;
+  text-align: justify;
+}
+
+.details {
+  z-index: 10;
+  padding: 0 30px 0 42px;
+}
+
+.rightabout{
+    padding-right: 50px;
+}

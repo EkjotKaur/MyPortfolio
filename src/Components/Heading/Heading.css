@@ -1,0 +1,53 @@
+/* .Heading {
+  font-size: 4rem;
+  font-weight: 700;
+
+  padding: 20px;
+  margin: 10px;
+  position: relative;
+  z-index: 1000000;
+}
+.Heading .div {
+  z-index: 1000000;
+}
+.Heading::before {
+  content: "";
+  position: absolute;
+  width: 150px;
+  height: 20px;
+  background-color: pink;
+  transform: skew(-30deg) translateX(-20%) translateY(50px);
+  z-index: 0.5;
+} */
+
+/* @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&display=swap'); */
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=IM+Fell+English+SC&display=swap");
+
+.Heading {
+  padding: 30px 40px 10px;
+  margin-bottom: 100px;
+  position: relative;
+  /* color: #000; */
+  z-index: 100;
+  font-size: 5rem;
+  font-weight: 600;
+  /* padding-left: 40px; */
+  font-style: italic;
+  padding-bottom: 40px;
+  color: rgb(255, 255, 255);
+  /* font-family: 'Cinzel', serif; */
+  font-family: "IM Fell English SC", serif;
+  display: inline;
+}
+
+.Heading::before {
+  content: "";
+  position: absolute;
+  /* left: 7%;
+  bottom: 16px; */
+  width: 75%;
+  height: 40px;
+  transform: skew(-40deg) translateX(20px) translateY(50px);
+  background: rgba(78, 248, 248, 0.432);
+  z-index: -1;
+}

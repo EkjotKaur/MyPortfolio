@@ -1,0 +1,15 @@
+.skillSetName {
+  text-align: center;
+  font-size: 1.3rem;
+  padding: 5px 0 30px;
+}
+.skillName {
+  text-align: center;
+  font-size: 1.1rem;
+  padding: 7px 0 0;
+  font-weight: 700;
+}
+
+.skillsValue .progress-bar{
+    background-color: #1e8580;
+}

@@ -1,0 +1,23 @@
+.contactForm {
+  width: 700px;
+  background-color: rgb(25, 25, 25);
+  padding: 20px;
+  border-radius: 2px;
+}
+.form-div {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.form-control {
+  background-color: #444;
+  /* border-radius: 0; */
+  border: 0;
+  color: #fff;
+}
+.contactBtn {
+  background: #fff;
+  box-shadow: none;
+  width: auto;
+  margin: 10.5px;
+  /* color: #fff; */
+}
