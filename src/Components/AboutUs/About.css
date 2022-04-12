@@ -4,7 +4,7 @@
 .lefttaboutrow,
 .rightmost,
 .followmerow {
-  height: calc(100vh - 40px);
+  min-height: calc(100vh - 40px);
   padding: 0%;
 }
 .rightabout,
@@ -23,7 +23,7 @@
 }
 
 .bottomabout {
-  height: 40px;
+  min-height: 40px;
 }
 
 .rightaboutrow {
@@ -35,4 +35,33 @@
 }
 .About .row {
   margin: 0;
+}
+
+@media only screen and (max-width: 900px) {
+  .leftabout {
+    display: none;
+  }
+  .rightabout {
+    flex: 11;
+    padding-right: 0 !important;
+  }
+  .rightaboutrow {
+    padding-right: 30px;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .rightmost {
+    display: none;
+  }
+  .About {
+    padding-right: 20px;
+  }
+  .hrline.col {
+    display: none;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .rightaboutrow {
+    padding: 0;
+  }
 }

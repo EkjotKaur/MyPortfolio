@@ -20,7 +20,7 @@ const StackIcons = ({ data }) => {
 
 const ProjectCard = ({ data }) => {
     return (
-        <Col className='col-md-4 card-col'>
+        <Col className='col-lg-4 col-md-6 col-12 card-col'>
             <Card>
                 <Card.Img variant="top" src={data.image} />
                 <Card.Body>

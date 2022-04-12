@@ -13,3 +13,17 @@
   //   display: none;
   // }
 }
+
+@media only screen and (max-width: 800px) {
+  .Navbar{
+    display: none;
+  }
+  .About{
+    background-color: #111;
+    padding-left: 20px;
+    padding-top: 20px;
+  }
+  .bottomabout{
+    background-color: #111;
+  }
+}

@@ -18,3 +18,14 @@
 .leftabout {
   padding-left: 100px !important;
 }
+
+@media only screen and (max-width: 1097px) {
+  .mypic {
+    width: 350px;
+  }
+  .myPicBackground {
+    width: 270px;
+    height: 350px;
+  }
+}
+
