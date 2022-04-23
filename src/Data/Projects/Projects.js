@@ -1,10 +1,10 @@
-import MSTeams from '../../assets/images/project/msTeams/Home Page.png'
-import CMSPortal from '../../assets/images/project/CMS/Home-2.png'
-import CMSDashboard from '../../assets/images/project/CMS/Dashboard.png'
-import Raunkh from '../../assets/images/project/Raunkh/Raunkh.png'
-import Presence from '../../assets/images/project/Presence/SS-2.png'
-import ZeroKata from '../../assets/images/project/ZeroKata/Game Page.png'
-import Game2048 from '../../assets/images/project/2048/SS-1.png'
+import MSTeams from "../../assets/images/project/msTeams/Home Page.png";
+import CMSPortal from "../../assets/images/project/CMS/Home-2.png";
+import CMSDashboard from "../../assets/images/project/CMS/Dashboard.png";
+import Raunkh from "../../assets/images/project/Raunkh/Raunkh.png";
+import Presence from "../../assets/images/project/Presence/SS-2.png";
+import ZeroKata from "../../assets/images/project/ZeroKata/Game Page.png";
+import Game2048 from "../../assets/images/project/2048/SS-1.png";
 
 const projectsData = [
     {
@@ -33,7 +33,8 @@ const projectsData = [
         github: "",
         image: MSTeams,
         body: [
-            "Used webRTC library simple-peer to add group and one-one video call functionality, audio-video toggle. Included chatting feature using socket.io and Teams for managing collective notes.",
+            "Used webRTC library simple-peer to add group and one-one video call functionality, audio-video toggle.",
+            " Included chatting feature using socket.io and Teams for managing collective notes.",
         ],
         stack: ["react", "node", "express", "mongodb", "socket", "webrtc"],
     },
@@ -43,7 +44,8 @@ const projectsData = [
         github: "",
         image: Raunkh,
         body: [
-            "Used webRTC library simple-peer to add group and one-one video call functionality, audio-video toggle. Included chatting feature using socket.io and Teams for managing collective notes.",
+            "Razorpay integration for donations and general event information.",
+            " An admin area with login and session store to display details of the donations from MongoDB.",
         ],
         stack: ["react", "node", "express", "mongodb", "socket"],
     },
@@ -53,7 +55,8 @@ const projectsData = [
         github: "",
         image: Presence,
         body: [
-            "Used webRTC library simple-peer to add group and one-one video call functionality, audio-video toggle. Included chatting feature using socket.io and Teams for managing collective notes.",
+            "Created a app for teachers to record, maintain, calculate and download attendance of students.",
+            "Performed CRUD operation using REST APIs to develop the functionalities",
         ],
         stack: ["node", "express", "mongodb", "ejs", "bootstrap", "css"],
     },

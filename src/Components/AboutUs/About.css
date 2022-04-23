@@ -56,9 +56,6 @@
   .About {
     padding-right: 20px;
   }
-  .hrline.col {
-    display: none;
-  }
 }
 @media only screen and (max-width: 400px) {
   .rightaboutrow {

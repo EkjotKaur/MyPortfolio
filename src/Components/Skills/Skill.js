@@ -7,7 +7,7 @@ import Heading from '../Heading/Heading';
 const Skills = () => {
 
     return (
-        <div className="Skills mt-5">
+        <div className="Skills mt-5" id="skills">
             <Container>
                 {/* <h1>Skills</h1> */}
                 <Heading name="Skills" />

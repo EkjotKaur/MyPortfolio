@@ -7,7 +7,7 @@ import Heading from '../Heading/Heading';
 
 const Projects = () => {
     return (
-        <div className="py-5 mt-5">
+        <div className="py-5 mt-5" id="projects">
             <Container>
                 {/* <ProjectList /> */}
                 <Heading name="Projects" />

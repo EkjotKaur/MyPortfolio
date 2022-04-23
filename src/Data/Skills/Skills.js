@@ -38,6 +38,10 @@ const skillsData = [
                 value: 90
             },
             {
+                name: "Tailwind CSS",
+                value: 90
+            },
+            {
                 name: "React JS",
                 value: 80
             },

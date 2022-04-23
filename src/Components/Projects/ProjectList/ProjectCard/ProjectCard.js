@@ -2,6 +2,7 @@ import React from 'react';
 import { Col, Card } from 'react-bootstrap';
 import './ProjectCard.scss';
 import { AiOutlineLink, AiFillGithub } from 'react-icons/ai';
+import { IoIosArrowDroprightCircle } from 'react-icons/io';
 // import {  } from 'ui-neumorphism';
 
 const StackIcons = ({ data }) => {
@@ -35,7 +36,8 @@ const ProjectCard = ({ data }) => {
                     </Card.Title>
                     <Card.Text>
                         <div className="project-body">
-                            {data.body.map(item => <div>{item}</div>)}
+                            {data.body.map(item => <div className="py-1"> <IoIosArrowDroprightCircle class="icon-exp icon-project" /> {item} </div>
+                            )}
                         </div>
                         <div>
                             <span className='pe-3 project-link'><a href={data.website}><AiOutlineLink /></a></span>

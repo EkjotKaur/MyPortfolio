@@ -17,6 +17,10 @@
   cursor: pointer;
 }
 
+.icon-project{
+  color: #fff;
+}
+
 .icon {
   font-size: 0.9rem;
   display: inline-flex;
@@ -105,7 +109,7 @@
 .bootstrap {
   background: #e3e49d;
   span::after {
-    content: "Bootrap";
+    content: "Boostrap";
   }
 }
 

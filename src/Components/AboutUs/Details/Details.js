@@ -9,6 +9,9 @@ const Details = () => {
             <Row className="justify-content-center flex-column rightaboutrow">
                 <div><img src={ProfilePicSq} alt="profile" className="img-sq" /></div>
                 <div><img src={ProfilePicHori} alt="profile" className="img-h" /></div>
+                <div className="bottomline pt-3 mb-3 hr-change-display">
+                    <span></span>
+                </div>
                 <div className="box"></div>
                 <Container className="container-box pb-5">
                     <div className="details">

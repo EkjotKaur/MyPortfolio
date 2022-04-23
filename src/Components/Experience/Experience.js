@@ -6,11 +6,9 @@ import { useState } from "react";
 import Tabs from "./Tabs/Tabs";
 import Heading from "../Heading/Heading";
 
-
-// const x = [1,2,3,4,5,6,7];
 const Experience = () => {
     return (
-        <div className="Experience container mt-5">
+        <div className="Experience container mt-5" id="experience">
 
             <Heading name="Experience" />
 

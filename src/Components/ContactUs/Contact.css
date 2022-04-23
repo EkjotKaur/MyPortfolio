@@ -1,6 +1,6 @@
 .contactForm {
-  width: 700px;
-  background-color: rgb(25, 25, 25);
+  /* width: 700px; */
+  background-color: #191919;
   padding: 20px;
   border-radius: 2px;
 }
@@ -20,4 +20,40 @@
   width: auto;
   margin: 10.5px;
   /* color: #fff; */
+}
+.recommend{
+  text-align: justify;
+}
+.name-r{
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+.des-r{
+  font-size: .9rem;
+  color: #bbb;
+  padding-bottom: 15px;
+}
+@media only screen and (max-width: 991px) {
+  .recommend {
+    display: none;
+  }
+  .contactForm {
+    width: 100%;
+  }
+}
+/* @media only screen and (max-width: 767px) {
+  .contactForm {
+    width: 100%;
+  }
+} */
+@media only screen and (min-width:400px) and (max-width: 600px) {
+  .contactForm {
+    width: 90%;
+    margin: auto !important;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .contactForm {
+    padding: 20px 10px;
+  }
 }

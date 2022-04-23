@@ -89,3 +89,12 @@ ul{
     opacity: 1;
   }
 }
+
+@media only screen and (max-width: 650px) {
+  .content{
+    padding: 0px 10px !important;
+  }
+  .tabs-content{
+    padding: 0;
+  }
+}
