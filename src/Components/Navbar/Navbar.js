@@ -1,6 +1,6 @@
 import "./Navbar.css";
 import "./Navbar.scss";
-import React from 'react';
+import React from "react";
 import { Col, Row } from "react-bootstrap";
 import { IoMdSchool } from "react-icons/io";
 import { RiFolderOpenFill } from "react-icons/ri";
@@ -16,9 +16,7 @@ const Navbar = () => {
                 <span className="hover-navlink-hide">
                     <GiProgression />
                 </span>{" "}
-                <div className="hover-navlink">
-                    Skills
-                </div>{" "}
+                <div className="hover-navlink">Skills</div>{" "}
             </a>
             {/* <a href={`/#skills`} className="navlinks">
                 <span className="hover-navlink-hide">
@@ -38,17 +36,21 @@ const Navbar = () => {
                 </span>{" "}
                 <div className="hover-navlink">Projects</div>{" "}
             </a>
-            <a  href={`/#contact`} className="navlinks">
+            <a href={`/#contact`} className="navlinks">
                 <span className="hover-navlink-hide">
                     <MdOutlineEmail />
                 </span>{" "}
                 <div className="hover-navlink">Contact</div>{" "}
             </a>
-            <a  href={`/#contact`} className="navlinks">
+            <a rel="noreferrer"
+                target="_blank"
+                href="https://drive.google.com/file/d/1iZ-4zqOzEJQls2yUy7hOBrUJk0fmezmD/view?usp=sharing" className="navlinks">
                 <span className="hover-navlink-hide">
                     <FaFileDownload />
                 </span>{" "}
-                <div className="hover-navlink">Resume</div>{" "}
+                <div className="hover-navlink">
+                    Resume
+                </div>{" "}
             </a>
         </Row>
     );

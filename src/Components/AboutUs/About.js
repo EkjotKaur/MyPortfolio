@@ -6,7 +6,7 @@ import ContactLinks from "./ContactsLinks/ContactLinks";
 
 const About = () => {
     return (
-        <div className="About">
+        <div className="About" id="home">
             <Row >
                 <ProfilePic />
                 <Details />

@@ -24,7 +24,7 @@ const ContactUs = () => {
         // Example POST method implementation:
 
         // Default options are marked with *
-        const response = await fetch("http://localhost:5000/contact", {
+        const response = await fetch("https://ekjotkaur.herokuapp.com/contact", {
             method: "POST", // *GET, POST, PUT, DELETE, etc.
             mode: "cors", // no-cors, *cors, same-origin
             cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
@@ -57,6 +57,7 @@ const ContactUs = () => {
                             <Form.Control
                                 size="lg"
                                 type="text"
+                                value={values.name}
                                 placeholder="Enter name"
                                 onChange={(e) =>
                                     setValues((prev) => {
@@ -70,6 +71,7 @@ const ContactUs = () => {
                             <Form.Control
                                 size="lg"
                                 type="email"
+                                value={values.email}
                                 placeholder="Enter email"
                                 onChange={(e) =>
                                     setValues((prev) => {
@@ -87,6 +89,7 @@ const ContactUs = () => {
                             <Form.Control
                                 size="lg"
                                 type="text"
+                                value={values.subject}
                                 placeholder="Enter Subject"
                                 onChange={(e) =>
                                     setValues((prev) => {
@@ -101,6 +104,7 @@ const ContactUs = () => {
                                 size="lg"
                                 as="textarea"
                                 rows={3}
+                                value={values.message}
                                 placeholder="Message"
                                 onChange={(e) =>
                                     setValues((prev) => {

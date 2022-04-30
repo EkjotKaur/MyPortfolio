@@ -11,8 +11,8 @@ h1 {
   font-weight: 300;
 } */
 
-ul{
-    padding: 0;
+ul {
+  padding: 0;
 }
 .title {
   margin-bottom: 25px;
@@ -23,8 +23,8 @@ ul{
   color: #5dade2;
 }
 .content {
-//   width: 640px;
-    padding: 30px;
+  //   width: 640px;
+  padding: 30px;
   margin: 45px auto;
 }
 .tabs-body {
@@ -91,10 +91,20 @@ ul{
 }
 
 @media only screen and (max-width: 650px) {
-  .content{
+  .content {
     padding: 0px 10px !important;
   }
-  .tabs-content{
+  .tabs-content {
     padding: 0;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .tabs-header {
+    font-size: 0.8rem;
+  }
+}
+@media only screen and (max-width: 344px) {
+  .tabs-header {
+    font-size: 0.6rem;
   }
 }

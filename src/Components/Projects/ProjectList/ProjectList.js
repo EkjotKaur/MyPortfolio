@@ -3,68 +3,6 @@ import './ProjectList.scss';
 import { BsThreeDotsVertical } from "react-icons/bs";
 
 
-// Dummy data placeholder. Replace with array of actual data objects
-const data = [
-    {
-        "project": "Project X",
-        "stack": ["react", "express", "node"],
-        "description": "Some sample text giving project elevator pitch and blah blah and other stuff and goals and dreams and rainbows and butterflies and sunshine. ",
-        "website": "https://www.google.com",
-        "github": "https://www.github.com",
-        "image": "https://s3-us-west-2.amazonaws.com/s.cdpn.io/326643/Sample%20Logo.png",
-        "needs": "People with super powers",
-        "status": "In Development"
-    },
-    {
-        "project": "Project XYZ",
-        "stack": ["python", "django"],
-        "description": "Some sample text giving project elevator pitch and blah blah and other stuff and goals and dreams and rainbows and butterflies and sunshine. ",
-        "website": "https://www.google.com",
-        "github": "https://www.github.com",
-        "needs": "People with super powers, semi-super powers, or no powers at all",
-        "image": "https://s3-us-west-2.amazonaws.com/s.cdpn.io/326643/sample%20logo%202.png",
-        "status": "Live"
-    }, {
-        "project": "Project X",
-        "stack": ["react", "express", "node"],
-        "description": "Some sample text giving project elevator pitch and blah blah and other stuff and goals and dreams and rainbows and butterflies and sunshine. ",
-        "website": "https://www.google.com",
-        "github": "https://www.github.com",
-        "image": "https://s3-us-west-2.amazonaws.com/s.cdpn.io/326643/Sample%20Logo.png",
-        "needs": "People with super powers",
-        "status": "In Development"
-    },
-    {
-        "project": "Project XYZ",
-        "stack": ["python", "django"],
-        "description": "Some sample text giving project elevator pitch and blah blah and other stuff and goals and dreams and rainbows and butterflies and sunshine. ",
-        "website": "https://www.google.com",
-        "github": "https://www.github.com",
-        "needs": "People with super powers, semi-super powers, or no powers at all",
-        "image": "https://s3-us-west-2.amazonaws.com/s.cdpn.io/326643/sample%20logo%202.png",
-        "status": "Live"
-    }, {
-        "project": "Project X",
-        "stack": ["react", "express", "node"],
-        "description": "Some sample text giving project elevator pitch and blah blah and other stuff and goals and dreams and rainbows and butterflies and sunshine. ",
-        "website": "https://www.google.com",
-        "github": "https://www.github.com",
-        "image": "https://s3-us-west-2.amazonaws.com/s.cdpn.io/326643/Sample%20Logo.png",
-        "needs": "People with super powers",
-        "status": "In Development"
-    },
-    {
-        "project": "Project XYZ",
-        "stack": ["python", "django"],
-        "description": "Some sample text giving project elevator pitch and blah blah and other stuff and goals and dreams and rainbows and butterflies and sunshine. ",
-        "website": "https://www.google.com",
-        "github": "https://www.github.com",
-        "needs": "People with super powers, semi-super powers, or no powers at all",
-        "image": "https://s3-us-west-2.amazonaws.com/s.cdpn.io/326643/sample%20logo%202.png",
-        "status": "Live"
-    }
-];
-
 function Layout(props) {
     return (
         <div className="row">{props.children}</div>
@@ -90,12 +28,13 @@ class Card extends React.Component {
                         </div>
                         <span className="card-title activator grey-text text-darken-4">
                             {this.props.data.project}
-                            <BsThreeDotsVertical  className='right' />
+                            {this.props.data.website}
+                            <BsThreeDotsVertical className='right' />
                             {/* <i className="material-icons right">more_vert</i> */}
                         </span>
                         <div>
-                            <span><a href={this.props.data.website}>Website</a></span>
-                            <span><a className="github" href={this.props.data.github}>Github</a></span>
+                            {this.props.data.website && this.props.data.website !== "" && <span><a href={this.props.data.website}>Website</a></span>}
+                            {this.props.data.github && this.props.data.github !== "" && <span><a className="github" href={this.props.data.github}>Github {this.props.data.github}</a></span>}
                         </div>
                     </div>
                     <div className="card-reveal">
@@ -130,6 +69,7 @@ function StackIcons(props) {
 function Projects(props) {
     const projects = [];
     const data = props.data;
+    console.log(data);
     data.forEach((item) => { projects.push(<Card data={item} />) });
     return (
         <div className='row'>{projects}</div>
@@ -137,7 +77,7 @@ function Projects(props) {
 }
 
 const ProjectList = () => {
-    return <Layout children={<Projects data={data} />} />
+    return <Layout children={<Projects />} />
 }
 
 export default ProjectList;

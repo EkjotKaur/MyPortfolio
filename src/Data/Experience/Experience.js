@@ -61,8 +61,8 @@ const ExperienceData = [
         position: "MLH Pre-Fellow",
         img: MLH,
         body: [
-          "Worked on backend APIs for E-Commerce portal and its admin dashboard using Node.js, MongoDB, and Express.",
-          "Integrated Payment Gateways, Authentication APIs, Currency rate APIs, and many more",
+          "The MLH Fellowship Prep Program is a 3-week preparation program for aspiring technologists who are interested in experiencing the fellowship before committing to the full 12-weeks. You'll build out your portfolio of personal projects & experiment with new technologies by collaborating in small groups through a short hackathon sprint.",
+          "Build a Portfolio Website using Ruby with pod. Also created a weather application using Reacts and Open APIs.",
         ],
       },
       {
@@ -111,8 +111,8 @@ const ExperienceData = [
         position: "Supervisor",
         img: GWOC,
         body: [
-          "Worked on backend APIs for E-Commerce portal and its admin dashboard using Node.js, MongoDB, and Express.",
-          "Integrated Payment Gateways, Authentication APIs, Currency rate APIs, and many more",
+          "GirlScript Winter of Contributing is a three-month newly established initiative by GirlScript Foundation to be conducted during winters. GWOC encourages individuals to share their knowledge and ideas to develop technical skills and gain valuable experience in the field of tech education. Over the course of the program, participants can contribute to a variety of themes under the guidance of an expert facilitator.",
+          "Supervisors are experts in the Open Source project on which the team is currently working. During the program, I provided project roadmap, was available to evaluate pull requests, assist with concepts, encouraged the team throughout the program.",
         ],
       },
       {

@@ -40,8 +40,8 @@ const ProjectCard = ({ data }) => {
                             )}
                         </div>
                         <div>
-                            <span className='pe-3 project-link'><a href={data.website}><AiOutlineLink /></a></span>
-                            <span className="project-link"><a href={data.github}><AiFillGithub /></a></span>
+                            {data.website && (<span className='pe-3 project-link'><a href={data.website}><AiOutlineLink /></a></span>)}
+                            {data.github && (<span className="project-link"><a href={data.github}><AiFillGithub /></a></span>)}
                         </div>
                     </Card.Text>
                     {/* <Button variant="primary">Go somewhere</Button> */}

@@ -1,27 +1,44 @@
-.NavbarMobileSlide{
-    display: none;
-    position: fixed;
-    height: 100vh;
-    background-color: #1e847f;
-    z-index: 1000;
-    padding: 0 40px 0 30px;
-    flex-direction: column;
-    justify-content: end;
+.NavbarMobileSlide {
+  // min-width: 60%;
+  display: none;
+  position: fixed;
+  height: 100vh;
+  background-color: #1e847f;
+  z-index: 1000;
+  padding: 0 100px 0 30px;
+  flex-direction: column;
+  justify-content: center;
 
-    &__links{
-      padding: 10px 0 30px 0;
-      // margin: auto;
+  // top: 0;
+  // left: 0;
+  // transform: translateX(300px);
+  // width: 0%;
+  // transform: translateX(0%);
+  // transition: ease-in-out;
+  // transition-duration: 5000ms;
+  // -webkit-transform: translateX(-100%);
+  // transform: translateX(0; 100%);
+  transition: all 0.2s ease-in-out;
+  animation: slide 0.2s linear;
 
-      .main-links{
-        font-size: 1.2rem;
-        padding: 10px 0;
-      }
+  &__links {
+    padding: 10px 0 30px 0;
+    // margin: auto;
+
+    .main-links {
+      font-size: 1.2rem;
+      padding: 10px 0;
     }
-    &__link{
-      padding: 5px 0;
-    }
+  }
+  &__link:hover {
+    color: #021a18;
+    font-weight: 700;
+  }
+  &__link {
+    padding: 5px 0;
+  }
 }
-.slideButton{
+.slideButton {
   position: fixed;
   color: #fff;
   font-size: 2rem;
@@ -31,10 +48,24 @@
 }
 
 @media only screen and (max-width: 800px) {
-    .NavbarMobileSlide{
-      display: flex;
-    }
-    .slideButton{
-      display: block;
-    }
+  .NavbarMobileSlide {
+    display: flex;
+    transition: all 1.5s ease;
+    // transform: translateX(100%);
+    // width: fit-content;
+  }
+  .slideButton {
+    display: block;
+  }
+}
+
+@keyframes slide {
+  0% {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+  100% {
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%);
+  }
 }
